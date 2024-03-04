@@ -1093,8 +1093,8 @@ GameObject:
   - component: {fileID: 1350769943}
   - component: {fileID: 1350769942}
   - component: {fileID: 1350769946}
-  - component: {fileID: 1350769947}
   - component: {fileID: 1350769948}
+  - component: {fileID: 1350769949}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -1206,7 +1206,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1350769947
+--- !u!65 &1350769948
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350769941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.16, z: 7.89}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1350769949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1215,24 +1228,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1350769941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 966c61a6b6d3e784a80ff7cb0234c4fa, type: 3}
+  m_Script: {fileID: 11500000, guid: fabec9783f1d4a74093f1b37ac6cfab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RB3D: {fileID: 1350769946}
---- !u!114 &1350769948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350769941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d2fac8b5e769354dbeb576f9ebecab8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  trunSpeed: 50
+  moveSpeed: 2000
+  rotateSpeed: 90
 --- !u!1 &2008824637
 GameObject:
   m_ObjectHideFlags: 0
